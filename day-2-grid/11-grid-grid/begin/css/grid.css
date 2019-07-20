@@ -23,6 +23,8 @@ a {
 	margin: 0 auto;
 	float: none;
 	background-color: #fff;
+	display: grid;
+	grid-gap: 1%;
 }
 /* hack to make images flexible in our prototype */
 div img {
@@ -30,17 +32,10 @@ div img {
 	max-width: 250px; 
 }
 /* grid system */
-.row {
-	display: flex;
-	flex-flow: row wrap;
-	flex: 0 1 auto;
-}
-[class*="col-"] {
-	flex: 0 0 92%;
-	margin: 0 4%;
-}
-.col-1-2,
-.col-1-4 {
+.r1c1,
+.r1c2,
+.r1c3,
+.r1c4 {
 	background-color: #ffc;
 }
 .col-2,
